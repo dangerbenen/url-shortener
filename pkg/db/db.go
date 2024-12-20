@@ -17,5 +17,4 @@ func NewDb(conf *configs.Cfg) *Db {
 		panic(err)
 	}
 	return &Db{db}
-
 }

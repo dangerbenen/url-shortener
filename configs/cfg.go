@@ -21,7 +21,7 @@ type AuthCfg struct {
 }
 
 func LoadConfig() *Cfg {
-	err := godotenv.Load("../.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		log.Println("Error loading .env, using default cfg")
 	}

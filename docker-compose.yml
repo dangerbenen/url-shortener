@@ -4,10 +4,9 @@ services:
     image: postgres
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: my_pass
+      POSTGRES_PASSWORD: 1234
       PGDATA: /data/postgres
     volumes:
       - ./postgres-data:/data/postgres
     ports:
       - ":5432"
-    
